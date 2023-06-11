@@ -18,16 +18,3 @@ if __name__ == '__main__':
     data = read_csv('./world_population.csv')
     print(data)
 
-# import csv
-
-# def read_csv(path):
-#    # Tu código aquí 👇
-#    with open(path, 'r') as csvfile:
-#         total = 0
-#         total = sum(int(pair[1]) for pair in csv.reader(csvfile))
-#         return total
-
-
-# response = read_csv('./app/data.csv')
-# print(response)
-

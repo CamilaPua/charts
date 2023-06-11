@@ -6,11 +6,10 @@ First you are going to see a pie chart of percentage of world population of Sout
 # App Project
 To run my code you must follow the following steps in your terminal
 
-```sh
-git clone
-cd app
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-python3 main.py
-```
+```sh```
+```git clone```
+```cd app```
+```python3 -m venv env```
+```source env/bin/activate```
+```pip3 install -r requirements.txt```
+```python3 main.py```

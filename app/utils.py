@@ -8,9 +8,8 @@ def get_population(country_data):
         '2015': int(country_data['2015 Population']),
         '2020': int(country_data['2020 Population']),
         '2022': int(country_data['2022 Population'])
-    }#     for key in country_data:
-#         if key in ['2022 Population', '2020 Population', '2015 Population', '2010 Population', '2000 Population', '1990 Population', '1980 Population', '1970 Population']:
-#             country_population[key] = country_data[key]
+    }
+    
     labels = country_population.keys()
     values = country_population.values()
     return labels, values

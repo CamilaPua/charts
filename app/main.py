@@ -1,7 +1,7 @@
 import utils, read_csv, charts
 
 def run():
-    data = read_csv.read_csv('./world_population.csv')
+    data = read_csv.read_csv('./app/world_population.csv')
 
     labels, values = utils.get_mundial_population(data)
     charts.generate_pie_chart(labels, values)

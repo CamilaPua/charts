@@ -15,6 +15,6 @@ def read_csv(path):
 
 
 if __name__ == '__main__':
-    data = read_csv('./world_population.csv')
+    data = read_csv('./app/world_population.csv')
     print(data)
 

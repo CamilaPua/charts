@@ -6,7 +6,7 @@ def run():
     labels, values = utils.get_mundial_population(data)
     charts.generate_pie_chart(labels, values)
 
-    country = input('Type Country: ')
+    country = input('Type Country: ').title()
 
     country_data = utils.country_data(data, country)
 
@@ -14,7 +14,7 @@ def run():
         country_data = country_data[0]
         labels, values = utils.get_population(country_data)
 
-        charts.generate_bar_chart(labels, values)
+        charts.generate_bar_chart(country, labels, values)
 
 
 if __name__ == '__main__':

@@ -1,13 +1,17 @@
 import utils, read_csv, charts
+import pandas as pd
 
 def run():
-    data = read_csv.read_csv('./app/world_population.csv')
+    df = pd.read_csv('./app/world_population.csv')
 
-    labels, values = utils.get_mundial_population(data)
+
+    continent = input('Type continent: ').title()
+    labels, values = utils.get_mundial_population_percentages_of_continent(df, continent)
     charts.generate_pie_chart(labels, values)
 
-    country = input('Type Country: ').title()
 
+    data = read_csv.read_csv('./app/world_population.csv')
+    country = input('Type Country: ').title()
     country_data = utils.country_data(data, country)
 
     if len(country_data) > 0:

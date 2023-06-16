@@ -19,11 +19,6 @@ def country_data(data, country):
     return list(filter(lambda item: item['Country/Territory'] == country, data))
 
 def get_mundial_population_percentages_of_continent(df, continent):
-    # data = list(filter(lambda country: country['Continent'] == 'South America', data))
-    # mundial_population = { country['Country/Territory']: country['World Population Percentage'] for country in data }
-    # labels = mundial_population.keys()
-    # values = mundial_population.values()
-
     df = df[df['Continent'] == continent]
 
     countries = df['Country/Territory'].values
